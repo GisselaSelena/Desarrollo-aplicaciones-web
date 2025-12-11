@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primera página de la Semana 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- AQUÍ SE CONECTA EL CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi primera página de la Semana 3</h1>
+        <p><strong>Hola</strong>, esta es una página creada para la <em>Semana 3</em>.</p>
+
+        <nav>
+            <ul>
+                <li><a href="#imagen">Imagen</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#enlaces">Enlaces</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#tabla">Tabla</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INTRODUCCIÓN -->
+        <section id="intro">
+            <article>
+                <h2>Introducción</h2>
+                <p>
+                    Esta página fue creada para practicar el uso de etiquetas semánticas de
+                    <strong>HTML5</strong>, listas, tablas, formularios, multimedia y estilos con
+                    <em>CSS</em>.
+                </p>
+            </article>
+        </section>
+
+        <!-- IMAGEN -->
+        <section id="imagen">
+            <h2>Imagen de ejemplo</h2>
+            <p>Esta es una imagen que cargué desde mi carpeta del proyecto.</p>
+            <img src="assets/img/imagen1.jpeg" alt="Imagen de prueba">
+        </section>
+
+        <!-- LISTAS -->
+        <section id="listas">
+            <h2>Listas de ejemplo</h2>
+
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Crear el archivo index.html</li>
+                <li>Agregar una imagen</li>
+                <li>Visualizar en Live Server</li>
+            </ol>
+
+            <h3>Lista desordenada</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>GitHub Pages</li>
+            </ul>
+        </section>
+
+        <!-- ENLACES -->
+        <section id="enlaces">
+            <h2>Enlace externo</h2>
+            <p>
+                Puedes visitar la documentación oficial de HTML en:
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+                    MDN Web Docs
+                </a>
+            </p>
+
+            <h2>Libro recomendado de HTML</h2>
+            <p>
+                Si deseas aprender más sobre HTML, puedes consultar este recurso:
+                <a href="https://www.htmlandcssbook.com/" target="_blank">
+                    Libro de HTML &amp; CSS - Jon Duckett
+                </a>
+            </p>
+        </section>
+
+        <!-- VIDEO -->
+        <section id="video">
+            <h2>Video de ejemplo</h2>
+            <p>Este es un video cargado desde la carpeta del proyecto.</p>
+
+            <video controls width="500">
+                <source src="assets/video/video1.mp4" type="video/mp4">
+                Tu navegador no puede reproducir este video.
+            </video>
+        </section>
+
+        <!-- TABLA -->
+        <section id="tabla">
+            <h2>Tabla de etiquetas HTML utilizadas</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;header&gt;</td>
+                        <td>Encabezado de la página, contiene el título principal.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;main&gt;</td>
+                        <td>Agrupa el contenido principal del sitio.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td>Muestra el pie de página con información final.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section id="formulario">
+            <h2>Formulario de contacto</h2>
+
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 - Mi proyecto de la Semana 3</p>
+    </footer>
+
+</body>
+</html>
