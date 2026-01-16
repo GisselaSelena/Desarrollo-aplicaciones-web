@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semana 6 - Formulario con Validaciones JS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Formulario de Registro</h1>
+      <p class="subtitle">Validaciones en tiempo real con HTML, CSS y JavaScript</p>
+
+      <form id="form" novalidate>
+        <!-- NOMBRE -->
+        <div class="field">
+          <label for="nombre">Nombre <span class="req">*</span></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Gissela" autocomplete="name" />
+          <small class="error" id="error-nombre"></small>
+        </div>
+
+        <!-- CORREO -->
+        <div class="field">
+          <label for="correo">Correo electrónico <span class="req">*</span></label>
+          <input type="email" id="correo" name="correo" placeholder="Ej: correo@ejemplo.com" autocomplete="email" />
+          <small class="error" id="error-correo"></small>
+        </div>
+
+        <!-- CONTRASEÑA -->
+        <div class="field">
+          <label for="password">Contraseña <span class="req">*</span></label>
+          <input type="password" id="password" name="password" placeholder="Mín. 8, 1 número y 1 especial" autocomplete="new-password" />
+          <small class="error" id="error-password"></small>
+        </div>
+
+        <!-- CONFIRMAR CONTRASEÑA -->
+        <div class="field">
+          <label for="confirmPassword">Confirmar contraseña <span class="req">*</span></label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repite la contraseña" autocomplete="new-password" />
+          <small class="error" id="error-confirmPassword"></small>
+        </div>
+
+        <!-- EDAD -->
+        <div class="field">
+          <label for="edad">Edad <span class="req">*</span></label>
+          <input type="number" id="edad" name="edad" placeholder="Debes ser mayor o igual a 18" min="0" />
+          <small class="error" id="error-edad"></small>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="actions">
+          <button type="submit" id="btnEnviar" disabled>Enviar</button>
+          <button type="reset" id="btnReset" class="secondary">Reiniciar</button>
+        </div>
+
+        <p class="hint">Los campos con <span class="req">*</span> son obligatorios.</p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
