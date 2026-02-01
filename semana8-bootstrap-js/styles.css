@@ -1,0 +1,13 @@
+/* Toque personal: fondo con degradado suave en el header */
+.hero-bg {
+  background: radial-gradient(1200px 400px at 20% 20%, rgba(13, 110, 253, 0.35), transparent),
+              radial-gradient(1000px 300px at 80% 10%, rgba(25, 135, 84, 0.25), transparent),
+              #0b1220;
+  color: #fff;
+}
+
+/* Bordes redondeados más “bonitos” en imágenes del carrusel */
+.carousel img {
+  max-height: 430px;
+  object-fit: cover;
+}
